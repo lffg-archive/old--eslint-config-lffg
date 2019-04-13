@@ -74,7 +74,7 @@ Your `.eslintrc.json` file should look like this:
 
 ```json
 {
-  "extends": [""]
+  "extends": ["lffg"]
 }
 ```
 
