@@ -25,6 +25,10 @@ You can use ESLint globally and/or locally per project.
 2. Then install everything needed by the config:
 
 ```shell
+# Yarn:
+npx install-peerdeps --dev --yarn eslint-config-lffg
+
+# NPM:
 npx install-peerdeps --dev eslint-config-lffg
 ```
 
@@ -52,29 +56,55 @@ npx install-peerdeps --dev eslint-config-lffg
 1. First install everything needed:
 
 ```shell
+# Yarn:
+npx install-peerdeps --global --yarn eslint-config-lffg
+
+# NPM:
 npx install-peerdeps --global eslint-config-lffg
 ```
 
 2. Then you need to make a global `.eslintrc.json` file:
 
-ESLint will look for one in your home directory
+ESLint will look for one in your home directory.
 
-- `~/.eslintrc.json` for mac
-- `C:\Users\<user>\.eslintrc.json` for windows
+- `~/.eslintrc.json` for Mac; or:
+- `C:\Users\<user>\.eslintrc.json` for Windows.
 
-In your `.eslintrc.json` file, it should look like this:
+Your `.eslintrc.json` file should look like this:
 
 ```json
 {
-  "extends": ["lffg"]
+  "extends": [""]
 }
 ```
 
 3. To use from the CLI, you can now run `eslint .` or configure your editor as we show next.
 
-## Settings
+## Integration With VS Code
 
-If you'd like to overwrite ESLint or Prettier rules, you can add the rules in your `.eslintrc.json` file. The [ESLint rules](https://eslint.org/docs/rules/) go directly under `"rules"` while [Prettier options](https://prettier.io/docs/en/options.html) go under `"rules"."prettier/prettier"`. Note that Prettier rules overwrite anything in the config (such as single quote, semicolons...), so you'll need to include those as well:
+Once you have done the installation, you probably want your editor to lint and fix for you. Here are the instructions for VS Code:
+
+1. Install the [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint);
+2. Open the VSCode settings in `Code/File` → `Preferences` → `Settings`. It's easier to enter these settings while editing the `settings.json` file, so click the `{}` icon in the top right corner:
+
+```js
+"editor.formatOnSave": true,
+"[javascript]": {
+  "editor.formatOnSave": false
+},
+"[javascriptreact]": {
+  "editor.formatOnSave": false
+},
+
+"eslint.autoFixOnSave": true,
+
+// Optional BUT IMPORTANT: If you have the prettier extension enabled for other languages like CSS and HTML, turn it off for JS since we are doing it through ESLint already.
+"prettier.disableLanguages": ["javascript", "javascriptreact"],
+```
+
+## Extra Rules Configuration
+
+If you'd like to overwrite [ESLint](https://eslint.org/docs/rules/) or [Prettier](https://prettier.io/docs/en/options.html) rules, you can add the rules in your `.eslintrc.json` file:
 
 ```js
 {
@@ -92,28 +122,6 @@ If you'd like to overwrite ESLint or Prettier rules, you can add the rules in yo
     ]
   }
 }
-```
-
-## Integration With VS Code
-
-Once you have done the installation, you probably want your editor to lint and fix for you. Here are the instructions for VS Code:
-
-1. Install the [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-2. Open the VSCode settings in `Code/File` → `Preferences` → `Settings`. It's easier to enter these settings while editing the `settings.json` file, so click the `{}` icon in the top right corner:
-
-```js
-"editor.formatOnSave": true,
-"[javascript]": {
-  "editor.formatOnSave": false
-},
-"[javascriptreact]": {
-  "editor.formatOnSave": false
-},
-
-"eslint.autoFixOnSave": true,
-
-// Optional BUT IMPORTANT: If you have the prettier extension enabled for other languages like CSS and HTML, turn it off for JS since we are doing it through ESLint already.
-"prettier.disableLanguages": ["javascript", "javascriptreact"],
 ```
 
 ---
