@@ -98,6 +98,9 @@ Once you have done the installation, you probably want your editor to lint and f
 
 "eslint.autoFixOnSave": true,
 
+// [!] Yarn:
+"eslint.packageManager": "yarn",
+
 // Optional BUT IMPORTANT: If you have the prettier extension enabled for other languages like CSS and HTML, turn it off for JS since we are doing it through ESLint already.
 "prettier.disableLanguages": ["javascript", "javascriptreact"],
 ```

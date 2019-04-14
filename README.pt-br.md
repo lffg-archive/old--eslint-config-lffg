@@ -96,6 +96,9 @@ Assim que você tiver concluido a instalação, você provavelmente irá desejar
   "editor.formatOnSave": false
 },
 
+// [!] Yarn:
+"eslint.packageManager": "yarn",
+
 "eslint.autoFixOnSave": true,
 
 // Opcional mas importante: Se você tiver a extensão do prettier ativada para outras linguagens como CSS ou HTML, desligue-a para JavaScript, já que estamos fazendo isso através do ESLint.
