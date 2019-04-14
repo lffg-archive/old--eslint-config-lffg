@@ -35,6 +35,7 @@ module.exports = {
     'no-extra-boolean-cast': 'warn',
 
     // General ESLint rules:
+    'sort-imports': 'off',
     'require-await': 'warn',
     'dot-notation': 'warn',
     'no-multi-assign': 'error',
@@ -48,7 +49,6 @@ module.exports = {
     'no-var': 'error',
     'prefer-const': 'warn',
     radix: 'error',
-    'sort-imports': 'warn',
     strict: 'error',
     'no-shadow': [
       'warn',
