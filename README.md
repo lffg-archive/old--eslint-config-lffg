@@ -2,6 +2,8 @@
 
 My default ESLint (with Prettier) configuration.
 
+> 🇧🇷 Instruções também disponíveis em um [README em Português](https://github.com/lffg/eslint-config-lffg/blob/master/README.pt-br.md).
+
 Important code style info:
 
 - 2 spaces for indentation;
