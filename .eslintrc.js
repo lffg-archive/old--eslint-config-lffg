@@ -30,15 +30,15 @@ module.exports = {
     'no-alert': 'off',
     'no-debugger': 'off',
     'no-constant-condition': 'off',
+    'no-shadow': 'off',
+    'require-await': 'off',
     'no-empty': 'warn',
     'no-unused-vars': 'warn',
     'no-extra-boolean-cast': 'warn',
 
     // General ESLint rules:
     'sort-imports': 'off',
-    'require-await': 'warn',
     'dot-notation': 'warn',
-    'no-multi-assign': 'error',
     'prefer-object-spread': 'warn',
     'no-return-await': 'error',
     yoda: 'warn',
@@ -48,15 +48,8 @@ module.exports = {
     'no-useless-return': 'error',
     'no-var': 'error',
     'prefer-const': 'warn',
-    radix: 'error',
+    radix: ['error', 'as-needed'],
     strict: 'error',
-    'no-shadow': [
-      'warn',
-      {
-        hoist: 'all',
-        allow: ['resolve', 'reject', 'done', 'next', 'err', 'error']
-      }
-    ],
 
     // Prettier rules:
     'prettier/prettier': [
