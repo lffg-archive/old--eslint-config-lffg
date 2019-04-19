@@ -1,3 +1,10 @@
+# `0.0.5`
+
+- New rules:
+  - `space-before-function-paren`.
+- Other:
+  - New `settings.json` property suggestion in `README.md`.
+
 # `0.0.4`
 
 - Changed rules:
