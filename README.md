@@ -14,7 +14,7 @@ Important code style info:
 - Lints JavaScript based on the latest standards;
 - Formats the code with Prettier;
 - Lints and fixes erros in HTML script tags;
-- You can see all the [rules here](https://github.com/lffg/eslint-config-lffg/blob/master/.eslintrc.js).
+- You can see all the [rules here](https://github.com/lffg/eslint-config-lffg/blob/master/index.js).
 
 ## Installing
 
