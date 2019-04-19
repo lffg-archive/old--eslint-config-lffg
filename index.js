@@ -27,7 +27,7 @@ module.exports = {
   ],
 
   rules: {
-    // Overwrite ESLint's recommended rules:
+    // Overwrite some defaults:
     'no-console': 'off',
     'no-alert': 'off',
     'no-debugger': 'off',
@@ -37,9 +37,12 @@ module.exports = {
     'no-empty': 'warn',
     'no-unused-vars': 'warn',
     'no-extra-boolean-cast': 'warn',
+    'space-before-function-paren': [
+      'warn',
+      { anonymous: 'never', named: 'never', asyncArrow: 'always' }
+    ],
 
     // General ESLint rules:
-    'sort-imports': 'off',
     'dot-notation': 'warn',
     'prefer-object-spread': 'warn',
     'no-return-await': 'error',
