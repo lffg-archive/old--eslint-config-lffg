@@ -90,6 +90,7 @@ Once you have done the installation, you probably want your editor to lint and f
 2. Open the VSCode settings in `Code/File` → `Preferences` → `Settings`. It's easier to enter these settings while editing the `settings.json` file, so click the `{}` icon in the top right corner:
 
 ```js
+"javascript.format.enable": false,
 "editor.formatOnSave": true,
 "[javascript]": {
   "editor.formatOnSave": false
