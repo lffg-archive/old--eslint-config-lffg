@@ -10,19 +10,21 @@ module.exports = {
   },
 
   // TypeScript support:
-  overrides: {
-    files: ['**/*.ts', '**/*.tsx'],
-    parser: '@typescript-eslint/parser',
-    plugins: ['@typescript-eslint'],
-    parserOptions: {
-      ecmaVersion: 2018,
-      sourceType: 'module',
-      ecmaFeatures: {
-        jsx: true
-      },
-      warnOnUnsupportedTypeScriptVersion: true
+  overrides: [
+    {
+      files: ['**/*.ts', '**/*.tsx'],
+      parser: '@typescript-eslint/parser',
+      plugins: ['@typescript-eslint'],
+      parserOptions: {
+        ecmaVersion: 2018,
+        sourceType: 'module',
+        ecmaFeatures: {
+          jsx: true
+        },
+        warnOnUnsupportedTypeScriptVersion: true
+      }
     }
-  },
+  ],
 
   rules: {
     // Overwrite ESLint's recommended rules:
