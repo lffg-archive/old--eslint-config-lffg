@@ -2,6 +2,8 @@
 
 My default ESLint (with Prettier) configuration.
 
+[![NPM](https://img.shields.io/npm/v/eslint-config-lffg.svg?logo=npm)](https://npmjs.org/package/eslint-config-lffg)
+
 > 🇧🇷 Instruções também disponíveis em um [README em Português](https://github.com/lffg/eslint-config-lffg/blob/master/README.pt-br.md).
 
 Important code style info:
