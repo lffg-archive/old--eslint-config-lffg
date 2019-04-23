@@ -2,6 +2,8 @@
 
 Minha configuração ESLint (com prettier) padrão.
 
+[![NPM](https://img.shields.io/npm/v/eslint-config-lffg.svg?logo=npm)](https://npmjs.org/package/eslint-config-lffg)
+
 Informações importantes em relação ao estilo do código:
 
 - 2 espaços para indentação;
