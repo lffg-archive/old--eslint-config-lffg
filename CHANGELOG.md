@@ -1,3 +1,9 @@
+# `0.0.6`
+
+- Bump versions:
+  - `babel-eslint` ⇒ `10.x`;
+  - `eslint-config-react-app` ⇒ `4.x`.
+
 # `0.0.5`
 
 - New rules:
