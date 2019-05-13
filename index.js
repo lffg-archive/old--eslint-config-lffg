@@ -9,6 +9,18 @@ module.exports = {
     }
   },
 
+  settings: {
+    'import/extensions': ['.js', '.jsx', '.ts', '.tsx'],
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx']
+    },
+
+    // Override this option in your own .eslintrc.json file.
+    react: {
+      version: 'latest'
+    }
+  },
+
   // TypeScript support:
   overrides: [
     {
