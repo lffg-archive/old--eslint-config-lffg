@@ -24,16 +24,12 @@ You can use ESLint globally and/or locally per project.
 
 ### Per Project Install
 
-1. If you don't already have a `package.json` file, create one with `npm init -y`.
+1. If you don't already have a `package.json` file, create one with `yarn init -y`.
 
 2. Then install everything needed by the config:
 
 ```shell
-# Yarn:
 npx install-peerdeps --dev --yarn eslint-config-lffg
-
-# NPM:
-npx install-peerdeps --dev eslint-config-lffg
 ```
 
 3. Create a `.eslintrc.json` file in the root of your project's directory (it should live where package.json does). Your `.eslintrc.json` file should look like this:
@@ -48,23 +44,19 @@ npx install-peerdeps --dev eslint-config-lffg
 
 ```json
 "scripts": {
-  "lint": "eslint .",
-  "lint:fix": "eslint . --fix"
+  "lint": "eslint . --ext .jsx,.js,.ts,.tsx",
+  "lint:fix": "yarn lint --fix"
 },
 ```
 
-5. Now you can manually lint your code by running `npm run lint` and fix all _fixable_ issues with `npm run lint:fix`. You probably want your editor to do this though.
+5. Now you can manually lint your code by running `yarn lint` and fix all _fixable_ issues with `yarn lint:fix`. You probably want your editor to do this though.
 
 ### Global Install
 
 1. First install everything needed:
 
 ```shell
-# Yarn:
 npx install-peerdeps --global --yarn eslint-config-lffg
-
-# NPM:
-npx install-peerdeps --global eslint-config-lffg
 ```
 
 2. Then you need to make a global `.eslintrc.json` file:
