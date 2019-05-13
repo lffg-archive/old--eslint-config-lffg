@@ -3,6 +3,9 @@
   "version": "0.0.7-1",
   "description": "lffg's ESLint config (for TypeScript and JavaScript).",
   "main": "index.js",
+  "bin": {
+    "eslint-config-lffg": "bin/cli.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lffg/eslint-config-lffg.git"
