@@ -1,3 +1,9 @@
+# `0.0.7`
+
+- Add dependencies in the `dependencies` `package.json` field.
+- Fix React settings;
+- Add some other settings.
+
 # `0.0.6`
 
 - Bump versions:
