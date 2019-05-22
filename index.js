@@ -4,7 +4,7 @@ module.exports = {
   parser: 'babel-eslint',
 
   extends: ['eslint:recommended', 'react-app', 'prettier'],
-  plugins: ['prettier', 'html'],
+  plugins: ['prettier', 'html', 'import', 'import-helpers'],
 
   parserOptions: {
     ecmaVersion: 2018,
@@ -71,6 +71,20 @@ module.exports = {
     'prefer-const': 'warn',
     radix: ['error', 'as-needed'],
     strict: 'error',
+
+    // Plugins:
+    'import/prefer-default-export': 'warn',
+    'import-helpers/order-imports': [
+      'warn',
+      {
+        'newlines-between': 'never',
+        groups: [
+          ['builtin', 'external', 'internal'],
+          ['parent', 'sibling', 'index']
+        ],
+        alphabetize: { order: 'asc', ignoreCase: true }
+      }
+    ],
 
     // Prettier rules:
     'prettier/prettier': [

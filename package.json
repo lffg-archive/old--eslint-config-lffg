@@ -33,6 +33,7 @@
     "eslint-plugin-flowtype": "2.x",
     "eslint-plugin-html": "5.x",
     "eslint-plugin-import": "2.x",
+    "eslint-plugin-import-helpers": "0.1.4",
     "eslint-plugin-jsx-a11y": "6.x",
     "eslint-plugin-prettier": "3.x",
     "eslint-plugin-react": "7.x",
