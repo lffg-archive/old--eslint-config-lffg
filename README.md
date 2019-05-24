@@ -7,6 +7,7 @@ My default ESLint (with Prettier) configuration.
 Important code style info:
 
 - 2 spaces for indentation;
+- Single quotes;
 - No semicolons.
 
 ## What it does
@@ -27,7 +28,7 @@ You can use ESLint globally and/or locally per project.
 2. Then install everything needed by the config:
 
 ```shell
-npx install-peerdeps --dev --yarn eslint-config-lffg
+yarn add eslint eslint-config-lffg --dev
 ```
 
 3. Create a `.eslintrc.json` file in the root of your project's directory (it should live where package.json does). Your `.eslintrc.json` file should look like this:
@@ -54,7 +55,7 @@ npx install-peerdeps --dev --yarn eslint-config-lffg
 1. First install everything needed:
 
 ```shell
-npx install-peerdeps --global --yarn eslint-config-lffg
+yarn global add eslint eslint-config-lffg
 ```
 
 2. Then you need to make a global `.eslintrc.json` file:
@@ -93,11 +94,16 @@ Once you have done the installation, you probably want your editor to lint and f
 
 "eslint.autoFixOnSave": true,
 
-// [!] Yarn:
+// 🛑 If you're using Yarn:
 "eslint.packageManager": "yarn",
 
-// Optional BUT IMPORTANT: If you have the prettier extension enabled for other languages like CSS and HTML, turn it off for JS since we are doing it through ESLint already.
-"prettier.disableLanguages": ["javascript", "javascriptreact"],
+// 🛑 Optional BUT IMPORTANT: If you have the prettier extension enabled for other languages like CSS and HTML, turn it off for JS since we are doing it through ESLint already.
+"prettier.disableLanguages": [
+  "javascript",
+  "javascriptreact",
+  "typescript",
+  "typescriptreact"
+],
 ```
 
 ## Extra Rules Configuration
