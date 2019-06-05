@@ -6,6 +6,10 @@
   "bin": {
     "eslint-config-lffg": "bin/cli.js"
   },
+  "scripts": {
+    "lint": "eslint . --ext .jsx,.js,.ts,.tsx",
+    "lint:fix": "yarn lint --fix"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lffg/eslint-config-lffg.git"
