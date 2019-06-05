@@ -74,13 +74,19 @@ module.exports = {
 
     // Plugins:
     'import/prefer-default-export': 'warn',
+    'import/newline-after-import': ['warn', { count: 1 }],
     'import-helpers/order-imports': [
       'warn',
       {
         'newlines-between': 'never',
         groups: [
-          ['builtin', 'external', 'internal'],
-          ['parent', 'sibling', 'index']
+          ['builtin'],
+          ['external'],
+          ['internal'],
+          ['/^(@|~)//'],
+          ['parent'],
+          ['sibling'],
+          ['index']
         ],
         alphabetize: { order: 'asc', ignoreCase: true }
       }
