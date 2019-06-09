@@ -19,13 +19,17 @@ module.exports = {
       '@typescript-eslint/parser': ['.ts', '.tsx']
     },
 
+    //
     // Override this option in your own .eslintrc.json file.
+    //
     react: {
       version: 'latest'
     }
   },
 
+  //
   // TypeScript support:
+  //
   overrides: [
     {
       files: ['**/*.ts', '**/*.tsx'],
@@ -43,7 +47,9 @@ module.exports = {
   ],
 
   rules: {
+    //
     // Overwrite some defaults:
+    //
     'no-console': 'off',
     'no-alert': 'off',
     'no-debugger': 'off',
@@ -58,7 +64,9 @@ module.exports = {
       { anonymous: 'never', named: 'never', asyncArrow: 'always' }
     ],
 
+    //
     // General ESLint rules:
+    //
     'dot-notation': 'warn',
     'prefer-object-spread': 'warn',
     'no-return-await': 'error',
@@ -72,7 +80,10 @@ module.exports = {
     radix: ['error', 'as-needed'],
     strict: 'error',
 
+    //
     // Plugins:
+    //
+    'jsx-a11y/accessible-emoji': 'off',
     'import/prefer-default-export': 'warn',
     'import/newline-after-import': ['warn', { count: 1 }],
     'import-helpers/order-imports': [
@@ -92,7 +103,9 @@ module.exports = {
       }
     ],
 
+    //
     // Prettier rules:
+    //
     'prettier/prettier': [
       'error',
       {
