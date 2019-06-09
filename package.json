@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-lffg",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "lffg's ESLint config (for TypeScript and JavaScript).",
   "main": "rules.js",
   "bin": {
