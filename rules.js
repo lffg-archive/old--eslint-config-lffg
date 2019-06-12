@@ -109,11 +109,11 @@ module.exports = {
     'prettier/prettier': [
       'error',
       {
-        semi: false,
+        semi: true,
         arrowParens: 'always',
         singleQuote: true,
         printWidth: 80
       }
     ]
   }
-}
+};
