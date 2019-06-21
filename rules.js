@@ -48,6 +48,7 @@ module.exports = {
       },
       rules: {
         ...require(TS_ESLINT_RECOMMENDED_RULES_PATH).rules,
+        '@typescript-eslint/camelcase': 'warn',
         '@typescript-eslint/indent': 'off',
         '@typescript-eslint/explicit-function-return-type': 'off',
         '@typescript-eslint/interface-name-prefix': 'off'
@@ -76,6 +77,7 @@ module.exports = {
     //
     // General ESLint rules:
     //
+    camelcase: 'warn',
     'dot-notation': 'warn',
     'prefer-object-spread': 'warn',
     'no-return-await': 'error',
