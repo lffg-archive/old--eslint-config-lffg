@@ -1,3 +1,7 @@
+const ERROR = 'error';
+const WARN = 'warn';
+const OFF = 'off';
+
 const TS_ESLINT_RECOMMENDED_RULES_PATH =
   '@typescript-eslint/eslint-plugin/dist/configs/recommended.json';
 
@@ -48,11 +52,11 @@ module.exports = {
       },
       rules: {
         ...require(TS_ESLINT_RECOMMENDED_RULES_PATH).rules,
-        '@typescript-eslint/camelcase': 'warn',
-        '@typescript-eslint/indent': 'off',
-        '@typescript-eslint/explicit-function-return-type': 'off',
-        '@typescript-eslint/interface-name-prefix': 'off',
-        '@typescript-eslint/no-non-null-assertion': 'off'
+        '@typescript-eslint/camelcase': WARN,
+        '@typescript-eslint/indent': OFF,
+        '@typescript-eslint/explicit-function-return-type': OFF,
+        '@typescript-eslint/interface-name-prefix': OFF,
+        '@typescript-eslint/no-non-null-assertion': OFF
       }
     }
   ],
@@ -61,45 +65,45 @@ module.exports = {
     //
     // Overwrite some defaults:
     //
-    'no-console': 'off',
-    'no-alert': 'off',
-    'no-debugger': 'off',
-    'no-constant-condition': 'off',
-    'no-shadow': 'off',
-    'require-await': 'off',
-    'no-empty': 'warn',
-    'no-unused-vars': 'warn',
-    'no-extra-boolean-cast': 'warn',
+    'no-console': OFF,
+    'no-alert': OFF,
+    'no-debugger': OFF,
+    'no-constant-condition': OFF,
+    'no-shadow': OFF,
+    'require-await': OFF,
+    'no-empty': WARN,
+    'no-unused-vars': WARN,
+    'no-extra-boolean-cast': WARN,
     'space-before-function-paren': [
-      'warn',
+      WARN,
       { anonymous: 'never', named: 'never', asyncArrow: 'always' }
     ],
 
     //
     // General ESLint rules:
     //
-    camelcase: 'warn',
-    'dot-notation': 'warn',
-    'prefer-object-spread': 'warn',
-    'no-return-await': 'error',
-    yoda: 'warn',
-    'no-unneeded-ternary': 'warn',
-    'no-useless-call': 'error',
-    'no-useless-catch': 'error',
-    'no-useless-return': 'error',
-    'no-var': 'error',
-    'prefer-const': 'warn',
-    radix: ['error', 'as-needed'],
-    strict: 'error',
+    camelcase: WARN,
+    'dot-notation': WARN,
+    'prefer-object-spread': WARN,
+    'no-return-await': ERROR,
+    yoda: WARN,
+    'no-unneeded-ternary': WARN,
+    'no-useless-call': ERROR,
+    'no-useless-catch': ERROR,
+    'no-useless-return': ERROR,
+    'no-var': ERROR,
+    'prefer-const': WARN,
+    radix: [ERROR, 'as-needed'],
+    strict: ERROR,
 
     //
     // Plugins:
     //
-    'jsx-a11y/accessible-emoji': 'off',
-    'import/prefer-default-export': 'warn',
-    'import/newline-after-import': ['warn', { count: 1 }],
+    'jsx-a11y/accessible-emoji': OFF,
+    'import/prefer-default-export': WARN,
+    'import/newline-after-import': [WARN, { count: 1 }],
     'import-helpers/order-imports': [
-      'warn',
+      WARN,
       {
         'newlines-between': 'never',
         groups: [
@@ -119,7 +123,7 @@ module.exports = {
     // Prettier rules:
     //
     'prettier/prettier': [
-      'error',
+      ERROR,
       {
         semi: true,
         arrowParens: 'always',
