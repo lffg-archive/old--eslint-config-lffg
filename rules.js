@@ -51,7 +51,8 @@ module.exports = {
         '@typescript-eslint/camelcase': 'warn',
         '@typescript-eslint/indent': 'off',
         '@typescript-eslint/explicit-function-return-type': 'off',
-        '@typescript-eslint/interface-name-prefix': 'off'
+        '@typescript-eslint/interface-name-prefix': 'off',
+        '@typescript-eslint/no-non-null-assertion': 'off'
       }
     }
   ],
