@@ -1,10 +1,13 @@
+const defaultParents = ['eslint:recommended', 'react-app', 'prettier'];
+const defaultPlugins = ['prettier', 'html', 'import', 'import-helpers'];
+
 module.exports = {
   root: true,
 
   parser: 'babel-eslint',
 
-  extends: ['eslint:recommended', 'react-app', 'prettier'],
-  plugins: ['prettier', 'html', 'import', 'import-helpers'],
+  extends: defaultParents,
+  plugins: defaultPlugins,
 
   parserOptions: {
     ecmaVersion: 2018,
@@ -34,7 +37,12 @@ module.exports = {
     {
       files: ['**/*.ts', '**/*.tsx'],
       parser: '@typescript-eslint/parser',
-      plugins: ['@typescript-eslint'],
+      extends: [
+        ...defaultParents,
+        'plugin:@typescript-eslint/eslint-recommended',
+        'plugin:@typescript-eslint/recommended'
+      ],
+      plugins: [...defaultPlugins, '@typescript-eslint'],
       parserOptions: {
         ecmaVersion: 2018,
         sourceType: 'module',
@@ -42,6 +50,9 @@ module.exports = {
           jsx: true
         },
         warnOnUnsupportedTypeScriptVersion: true
+      },
+      rules: {
+        '@typescript-eslint/interface-name-prefix': 'off'
       }
     }
   ],
