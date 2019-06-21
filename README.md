@@ -8,7 +8,7 @@ Important code style info:
 
 - 2 spaces for indentation;
 - Single quotes;
-- No semicolons.
+- Semicolons as required.
 
 ## What it does
 
