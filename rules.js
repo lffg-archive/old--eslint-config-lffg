@@ -52,7 +52,7 @@ module.exports = {
       },
       rules: {
         ...require(TS_ESLINT_RECOMMENDED_RULES_PATH).rules,
-        '@typescript-eslint/camelcase': WARN,
+        '@typescript-eslint/camelcase': [WARN, { properties: 'never' }],
         '@typescript-eslint/indent': OFF,
         '@typescript-eslint/explicit-function-return-type': OFF,
         '@typescript-eslint/interface-name-prefix': OFF,
@@ -82,7 +82,7 @@ module.exports = {
     //
     // General ESLint rules:
     //
-    camelcase: WARN,
+    camelcase: [WARN, { properties: 'never' }],
     'dot-notation': WARN,
     'prefer-object-spread': WARN,
     'no-return-await': ERROR,
