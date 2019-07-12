@@ -56,7 +56,8 @@ module.exports = {
         '@typescript-eslint/indent': OFF,
         '@typescript-eslint/explicit-function-return-type': OFF,
         '@typescript-eslint/interface-name-prefix': OFF,
-        '@typescript-eslint/no-non-null-assertion': OFF
+        '@typescript-eslint/no-non-null-assertion': OFF,
+        '@typescript-eslint/no-explicit-any': OFF
       }
     }
   ],
