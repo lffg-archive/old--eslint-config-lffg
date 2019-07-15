@@ -101,7 +101,7 @@ module.exports = {
     // Plugins:
     //
     'jsx-a11y/accessible-emoji': OFF,
-    'import/prefer-default-export': WARN,
+    'import/no-default-export': WARN,
     'import/newline-after-import': [WARN, { count: 1 }],
     'import-helpers/order-imports': [
       WARN,
