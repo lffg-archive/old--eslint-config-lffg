@@ -58,7 +58,8 @@ module.exports = {
         '@typescript-eslint/interface-name-prefix': OFF,
         '@typescript-eslint/no-non-null-assertion': OFF,
         '@typescript-eslint/no-explicit-any': OFF,
-        '@typescript-eslint/member-delimiter-style': OFF
+        '@typescript-eslint/member-delimiter-style': OFF,
+        '@typescript-eslint/no-empty-interface': OFF
       }
     }
   ],
