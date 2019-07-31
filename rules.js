@@ -96,7 +96,7 @@ module.exports = {
     'no-useless-return': ERROR,
     'no-var': ERROR,
     'prefer-const': WARN,
-    radix: [ERROR, 'as-needed'],
+    radix: [ERROR, 'always'],
     strict: ERROR,
 
     //
