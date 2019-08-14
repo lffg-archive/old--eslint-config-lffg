@@ -1,3 +1,5 @@
+const builtInModules = require('builtin-modules');
+
 const ERROR = 'error';
 const WARN = 'warn';
 const OFF = 'off';
@@ -108,17 +110,17 @@ module.exports = {
     'import-helpers/order-imports': [
       WARN,
       {
-        'newlines-between': 'never',
         groups: [
-          ['builtin'],
-          ['external'],
-          ['internal'],
+          [`/^(${builtInModules.join('|')})$/`],
+          ['absolute'],
+          ['module'],
           ['/^(@|~)//'],
           ['parent'],
           ['sibling'],
           ['index']
         ],
-        alphabetize: { order: 'asc', ignoreCase: true }
+        alphabetize: { order: 'asc', ignoreCase: true },
+        newlinesBetween: 'never'
       }
     ],
 
