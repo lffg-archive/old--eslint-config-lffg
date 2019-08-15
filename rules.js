@@ -61,7 +61,8 @@ module.exports = {
         '@typescript-eslint/no-non-null-assertion': OFF,
         '@typescript-eslint/no-explicit-any': OFF,
         '@typescript-eslint/member-delimiter-style': OFF,
-        '@typescript-eslint/no-empty-interface': OFF
+        '@typescript-eslint/no-empty-interface': OFF,
+        '@typescript-eslint/explicit-member-accessibility': OFF
       }
     }
   ],
