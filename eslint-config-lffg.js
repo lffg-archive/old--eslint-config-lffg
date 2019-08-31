@@ -175,7 +175,6 @@ module.exports = {
     'require-yield': WARN, // Recommended -> Warn
     'no-script-url': WARN,
     'no-extra-bind': WARN,
-    'require-await': WARN,
     'default-case': [WARN, { commentPattern: '^no default$' }],
     'prefer-const': WARN,
     'dot-notation': WARN,
@@ -215,6 +214,7 @@ module.exports = {
     ],
     'no-constant-condition': OFF,
     'no-empty-function': OFF,
+    'require-await': OFF,
 
     //
     // ESLint Plugin React
