@@ -43,8 +43,9 @@ yarn add eslint eslint-config-lffg --dev
 
 ```json
 "scripts": {
-  "lint": "eslint . --ext .jsx,.js,.ts,.tsx",
-  "lint:fix": "yarn lint --fix"
+  "lint": "yarn lint:raw .",
+  "lint:fix": "yarn lint:raw --fix .",
+  "lint:raw": "eslint --ext .js,.jsx,.ts,.tsx --max-warnings=0"
 },
 ```
 
