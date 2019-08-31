@@ -33,7 +33,7 @@ yarn add eslint eslint-config-lffg --dev
 
 3. Create a `.eslintrc.json` file in the root of your project's directory (it should live where package.json does). Your `.eslintrc.json` file should look like this:
 
-```json
+```js
 {
   "extends": ["lffg"]
 }
@@ -41,7 +41,7 @@ yarn add eslint eslint-config-lffg --dev
 
 4. **[Optional]** You can add two scripts to your `package.json` to lint and fix:
 
-```json
+```js
 "scripts": {
   "lint": "yarn lint:raw .",
   "lint:fix": "yarn lint:raw --fix .",
@@ -68,7 +68,7 @@ ESLint will look for one in your home directory.
 
 Your `.eslintrc.json` file should look like this:
 
-```json
+```js
 {
   "extends": ["lffg"]
 }
@@ -133,7 +133,7 @@ If you'd like to overwrite [ESLint](https://eslint.org/docs/rules/) or [Prettier
 
 This ESLint configuration **does NOT** come with `eslint-config-react-app`. If you want to use this with React App's presets, use the following ESLint config:
 
-```json
+```js
 {
   "extends": ["react-app", "lffg"]
 }
