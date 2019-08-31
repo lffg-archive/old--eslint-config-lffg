@@ -84,10 +84,13 @@ module.exports = {
         ],
         '@typescript-eslint/no-useless-constructor': WARN,
         '@typescript-eslint/no-array-constructor': WARN,
-        '@typescript-eslint/no-inferrable-types': WARN,
         '@typescript-eslint/no-unused-vars': [WARN, { args: 'after-used' }],
         '@typescript-eslint/no-namespace': WARN,
         '@typescript-eslint/camelcase': [WARN, { properties: 'never' }],
+        '@typescript-eslint/no-inferrable-types': [
+          WARN,
+          { ignoreParameters: true, ignoreProperties: true }
+        ],
         '@typescript-eslint/explicit-function-return-type': OFF,
         '@typescript-eslint/explicit-member-accessibility': OFF,
         '@typescript-eslint/member-delimiter-style': OFF,
