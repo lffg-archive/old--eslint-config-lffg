@@ -1,1 +1,1 @@
-module.exports = require('./rules.js');
+module.exports = require('./eslint-config-lffg');

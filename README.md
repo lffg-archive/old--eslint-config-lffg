@@ -128,8 +128,21 @@ If you'd like to overwrite [ESLint](https://eslint.org/docs/rules/) or [Prettier
 }
 ```
 
+## NOTE:
+
+This ESLint configuration **does NOT** come with `eslint-config-react-app`. If you want to use this with React App's presets, use the following ESLint config:
+
+```json
+//! .eslintrc.json
+//  You'll need to install `eslint`, `eslint-config-react-app` and `eslint-config-lffg`.
+
+{
+  "extends": ["react-app", "lffg"]
+}
+```
+
 ---
 
 This package is released under the [MIT License](https://github.com/lffg/eslint-config-lffg/blob/master/LICENSE).
 
-This is a fork of [`eslint-config-wesbos`](https://github.com/wesbos/eslint-config-wesbos) and heavily inspired by the [`eslint-config-react-app`](https://www.npmjs.com/package/eslint-config-react-app) rules.
+This is a _fork_ of [`eslint-config-wesbos`](https://github.com/wesbos/eslint-config-wesbos) and heavily inspired by the [`eslint-config-react-app`](https://www.npmjs.com/package/eslint-config-react-app) rules.
