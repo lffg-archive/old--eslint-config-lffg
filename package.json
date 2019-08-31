@@ -2,7 +2,7 @@
   "name": "eslint-config-lffg",
   "version": "8.0.0-0",
   "description": "lffg's ESLint config (for TypeScript and JavaScript).",
-  "main": "rules.js",
+  "main": "eslint-config-lffg.js",
   "bin": {
     "eslint-config-lffg": "bin/cli.js"
   },
