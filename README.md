@@ -19,7 +19,7 @@ Important code style info:
 
 ## Installing
 
-You can use ESLint globally and/or locally per project.
+You should install this configuration for each project you want. As of ESLint 6.x, a global installation is not recommended. You can learn more reading [this migration guide by ESLint](https://eslint.org/docs/user-guide/migrating-to-6.0.0#-plugins-and-shareable-configs-are-no-longer-affected-by-eslints-location).
 
 ### Per Project Install
 
@@ -50,31 +50,6 @@ yarn add eslint eslint-config-lffg --dev
 ```
 
 5. Now you can manually lint your code by running `yarn lint` and fix all _fixable_ issues with `yarn lint:fix`. You probably want your editor to do this though.
-
-### Global Install
-
-1. First install everything needed:
-
-```shell
-yarn global add eslint eslint-config-lffg
-```
-
-2. Then you need to make a global `.eslintrc.json` file:
-
-ESLint will look for one in your home directory.
-
-- `~/.eslintrc.json` for Mac; or:
-- `C:\Users\<user>\.eslintrc.json` for Windows.
-
-Your `.eslintrc.json` file should look like this:
-
-```js
-{
-  "extends": ["lffg"]
-}
-```
-
-3. To use from the CLI, you can now run `eslint .` or configure your editor as we show next.
 
 ## Integration With VS Code
 
@@ -129,17 +104,19 @@ If you'd like to overwrite [ESLint](https://eslint.org/docs/rules/) or [Prettier
 }
 ```
 
-## Using with `eslint-config-react-app`
+## Usage with `eslint-config-react-app`
 
-This ESLint configuration **does NOT** come with `eslint-config-react-app`. If you want to use this with React App's presets, use the following ESLint config:
+As of [8.x](https://github.com/lffg/eslint-config-lffg/releases/tag/v8.0.0), this ESLint configuration **does NOT** extend `eslint-config-react-app` by default. If you want to use this configuration with React App's presets, use the following in your `.eslintrc.json`:
 
 ```js
+// Note: You'll need to install `eslint`, `eslint-config-react-app` and `eslint-config-lffg`.
+
 {
   "extends": ["react-app", "lffg"]
 }
 ```
 
-Note: You'll need to install `eslint`, `eslint-config-react-app` and `eslint-config-lffg`.
+But in the end, you should not even bother using React App's configuration, as `eslint-config-lffg` already supports React out of the box. 😁
 
 ---
 
